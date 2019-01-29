@@ -1,3 +1,8 @@
+h2
+{
+    font-size: 1em;
+    color: gray;
+}
 .nav
 {
     position: fixed;
@@ -50,7 +55,7 @@ a.contact-link
 #about
 {
     margin-top: 2em;
-    margin-bottom: 22em;
+    margin-bottom: 6em;
 }
 #about-h1
 {
@@ -65,21 +70,53 @@ a.contact-link
 }
 #about-text
 {
-    color: grey;
+    color: #626262;
 }
-
-.resp-container {
+.resp-container
+{
     margin: 2em;
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
 }
-
-.resp-iframe {
+.resp-iframe
+{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: 0;
+}
+.project-container
+{
+    margin-top: 10em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#project-name
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+#project-subtext
+{
+    margin-top: .2em;
+    color: darkgray;
+}
+#project-body
+{
+}
+
+#project-attachments
+{
+    margin-top: 2em;
+}
+.inline-link
+{
+    color: black;
+}
+.inline-link:hover
+{
+    color: gray;
 }
