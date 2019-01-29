@@ -41,9 +41,15 @@ a.contact-link
     color: black;
     text-decoration: none;
 }
+#my-face
+{
+    margin-left: 45%;
+    height: 40%;
+    width: 40%;
+}
 #about
 {
-    margin-top: 17em;
+    margin-top: 2em;
     margin-bottom: 22em;
 }
 #about-h1
