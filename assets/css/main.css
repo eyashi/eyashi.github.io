@@ -30,7 +30,6 @@ a.nav-link:active
 .footer
 {
     margin: 1em;
-    position: fixed;
     bottom: 0;
 }
 #contact-pane
@@ -42,9 +41,13 @@ a.contact-link
     color: black;
     text-decoration: none;
 }
+#about
+{
+    margin-top: 17em;
+    margin-bottom: 22em;
+}
 #about-h1
 {
-    margin-top: 5em;
     margin-bottom: 0;
     font-size: 3em;
     font-weight: bold;
