@@ -17,7 +17,7 @@
             modal.style.display = "block";
             fetch('projects-generated/test.html')
                 .then(response => response.text())
-                .then(text => $("modal-content").append(content));
+                .then(text => $("modal-content").append(text));
 
             var span = document.getElementsByClassName("close")[0];
 
