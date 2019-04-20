@@ -10,17 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <div class="pure-g">
         <div class="pure-u-4-5"></div>
         <div class="pure-u-1-5">
             <div class="nav">
-                <a class="nav-link" href="index.html">About</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="resume.html">Resume</a>
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="index.html">about</a>
+                <a class="nav-link" href="#projects">projects</a>
+                <a class="nav-link" href="resume.html">resume</a>
+                <a class="nav-link" href="#contact">contact</a>
             </div>
         </div>
     </div>
@@ -42,10 +41,19 @@
             </div>
             <div class="content" id="projects">
                 <h1>projects</h1>
-                <p>
-                    <a href="projects\hitprint.html"> High Temperature 3d Printing</a>
-                </p>
+                <a href="projects\hitprint.html">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="assets/img/more-pix100px.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>High Temperature 3d Printing</h2>
+                            <p>this is some description baby</p>
+                        </div>
+                    </div>
+                </a>
             </div>
+
             <div class="footer" id="contact">
                 <div id="contact-pane">
                     <a class="contact-link" href="https://www.linkedin.com/in/eyashin"><span style="font-size: 1.5em;" class="fab fa-linkedin"></span></a>
@@ -55,5 +63,6 @@
         </div>
         
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </body>
 </html>
