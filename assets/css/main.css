@@ -32,6 +32,11 @@ a.nav-link:active
 {
     margin: 2em;
 }
+.project-tiles
+{
+    display: flex;
+    margin: 2em;
+}
 .footer
 {
     margin: 1em;
