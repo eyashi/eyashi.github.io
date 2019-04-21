@@ -9,5 +9,5 @@ python scripts/projectpages.py
 git add *
 echo Deploy commit message:
 read commitMessage
-git commit -m '$commitMessage'
+git commit -m "$commitMessage"
 git push
