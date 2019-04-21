@@ -16,7 +16,7 @@ def getImageName(name, imgDir):
     return None
 
 def getTitle(name):
-    projectDir = '../md-project-files'
+    projectDir = 'md-project-files'
     for p in os.listdir(projectDir):
         if name in p:
             with open(os.path.join(projectDir, p), 'r') as pf:
@@ -25,7 +25,7 @@ def getTitle(name):
     return None
 
 def getDescript(name):
-    projectDir = '../md-project-files'
+    projectDir = 'md-project-files'
     for p in os.listdir(projectDir):
         if name in p:
             with open(os.path.join(projectDir, p), 'r') as pf:
@@ -35,7 +35,7 @@ def getDescript(name):
     return None
 
 def getProjectDicts(projectDir):
-    imgDir = '../assets/img'
+    imgDir = 'assets/img'
     projects = [
         os.path.splitext(i)[0] for i in
         os.listdir(projectDir)
@@ -52,9 +52,9 @@ def getProjectDicts(projectDir):
     return projectPages
 
 def modIndex():
-    templatePath = '../index-template.html'
-    renderPath = '../index.html'
-    projectDir = '../projects-generated'
+    templatePath = 'index-template.html'
+    renderPath = 'index.html'
+    projectDir = 'projects-generated'
     projects = getProjectDicts(projectDir)
 
     with open(templatePath, 'r') as t:
@@ -74,7 +74,7 @@ def convertOne(mdFilePath, outDir):
         out.write(html)
 
 def convertAll(mdDir):
-    generatedProjectDirectory = os.path.join('..', 'projects-generated')
+    generatedProjectDirectory = 'projects-generated'
     if not os.path.isdir(generatedProjectDirectory):
         os.mkdir(generatedProjectDirectory)
 
@@ -83,7 +83,7 @@ def convertAll(mdDir):
         convertOne(filePath, generatedProjectDirectory)
 
 def main():
-    mdDir = os.path.join('..', 'md-project-files')
+    mdDir = 'md-project-files'
     convertAll(mdDir)
     modIndex()
 
