@@ -3,7 +3,7 @@ function openProjectModal(contentId) {
     modal.style.display = "block";
     fetch(`projects-generated/${contentId}.html`)
         .then(response => response.text())
-        .then(text => $("#modal-content").append(text));
+        .then(text => $("#modal-content").html(text));
 
     var span = document.getElementsByClassName("close")[0];
 

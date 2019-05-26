@@ -198,6 +198,11 @@ color: #fff;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
+
+  .modal-content img{
+      max-width: 100%;
+      height: auto;
+  }
   
   /* The Close Button */
   .close {
