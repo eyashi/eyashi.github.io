@@ -89,5 +89,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # print(getTitle('test'))
-    # print(getDescript('test'))
