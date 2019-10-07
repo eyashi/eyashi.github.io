@@ -1,10 +1,18 @@
 # 3D Printer in a Vaccuum
+## Senior research project to emulate space environments for 3D printing.
 
-That's right, I stuck a 3D printer in a vaccuum. The concept originated as just some lunch time discussion at NASA, but someone at the University of Michigan was willing to entertain that kind of research as an independent study course. Thus, the Vaccuum Printer was born.
+Have you ever wondered what happens when you put a thermoplastic 3D printer under high vacuum?
 
-The motion axes were built in the dimensions of a vaccuum oven already present in the lab, and the wires for the printer were routed through the gas outlet/inlet. This printer used modified Marlin firmware to activate the vaccuum pump and maintain the required level of vaccuum. The biggest struggle in vaccuum (predictably) ended up being cooling down the part and extruder. Typically air-cooling takes care of most complications in setting the thermoplastic after laying down each layer, but without the air the part remained relatively warm throughout. We got around this by introducing a water-cooled print bed (opposite of a heat bed, weird!), and a water cooled extruder. Remarkably, this helped out a lot, especially with parts that didn't get too tall. The taller the part, the less this method was effective.
+Me too. So I proposed an independent study be done about it.
 
-We tested the material properties six thermoplastics while under vaccuum. Some interesting properties of the prints were less internal stress and better layer adhesion, and a somewhat more uneven layer-to-layer height. I used SEM images of the prints and a Python script to measure the layer height variance throughout the part, and found that the prints done at atmospheric pressure had more even layer heights overall. A loose theory to explain this is the increased cooling time of the part allowed internal stresses and irregular pressure across the part to "expand" as needed, which resulted in a wobbly bunch of layers in an overall more destressed component.
+After a few months of research and a presentation at AeroDef in Fort Worth, Texas:
 
-: The research poster here :
-: Some photos of the printer here :
+We found that it was just really tough to cool things down.
+
+Here is a look at the unique water cooled extruder designed for the printer (if that doesn't look like undergraduate University funding, I don't know what does!)
+
+<img src="../assets/img/extruder.png" alt="water cooled extruder"
+	width="500" />
+
+Here is the poster presented:
+![](../assets/img/aerodefposter.JPG)
