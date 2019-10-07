@@ -1,9 +1,6 @@
-workon ed
-
-python scripts/projectpages.py
-
-git add *
-
-set /P cmtMsg ="Deploy commit message: "
-git commit -m "%cmtMsg%"
-git push 
+CALL workon ed
+CALL python scripts/projectpages.py
+CALL git add *
+CALL set /P cmtMsg ="Deploy commit message: "
+CALL git commit -m "%cmtMsg%"
+CALL git push 
