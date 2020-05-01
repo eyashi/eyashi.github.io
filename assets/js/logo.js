@@ -4,6 +4,10 @@ function getRandomRainbow(){
 }
 
 window.onload = function() {
+    initalizeLogo()
+}
+
+function initalizeLogo(){
     var canvas = document.getElementById('logo')
     canvas.width = 516;
     canvas.height = 546;
