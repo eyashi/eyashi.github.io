@@ -1,0 +1,45 @@
+.nav
+{
+    margin-right: 2em;
+}
+.nav-link
+{
+    padding: .2em;
+    display: table;
+}
+
+a.inline-link:hover
+{
+    color: blueviolet;
+}
+a.nav-link
+{
+    text-decoration: none;
+    color: gray;
+}
+a.nav-link:hover
+{
+    color: blueviolet;
+}
+a.nav-link:active
+{
+    color: gray;
+    text-indent: .1em;
+}
+
+.party-overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+.is-hidden {
+    display: none;
+}

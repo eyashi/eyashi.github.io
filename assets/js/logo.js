@@ -20,10 +20,11 @@ window.onload = function() {
         mousePos = event.point;
         res = paper.project.activeLayer.hitTest(mousePos)
         if(res){
-            res.item.fillColor = getRandomRainbow();
+            prev_alpha = Math.floor(res.item.fillColor.alpha * 255)
+            res.item.fillColor = getRandomRainbow() + prev_alpha.toString(16)
         }
 
     }
-    
+
     paper.view.draw();
 }
