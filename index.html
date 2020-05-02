@@ -11,10 +11,15 @@
 
         <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
 
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script src="assets/js/paper-full.min.js"></script>
     </head>
     <body>
         <section class="section">
+            <span class="is-pulled-left">
+                <a class="nav-link" href="https://github.com/eyashi" target="_blank"><i class="fab fa-github is-size-3"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/in/eyashin/" target="_blank"><i class="fab fa-linkedin is-size-3"></i></a>
+            </span>
             <span class="nav is-pulled-right">
                 <a class="nav-link" href="">about</a>
                 <a class="nav-link" href="#projects">projects</a>
@@ -61,5 +66,13 @@
         <script src="assets/js/points.js"></script>
         <script src="assets/js/logo.js"></script>
         <script src="assets/js/party.js"></script>
+        <script>
+            $('.fa-github').click(function(){
+                window.open('https://github.com/eyashi', '_blank')
+            })
+            $('.fa-linkedin').click(function(){
+                window.open('https://www.linkedin.com/in/eyashin/', '_blank')
+            })
+        </script>
     </body>
 </html>
