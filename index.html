@@ -7,7 +7,7 @@
         <title>welcome</title>
 
         <!-- STYLE -->
-        <link rel="stylesheet" href="assets/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
 
         <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
@@ -16,35 +16,35 @@
         <script src="assets/js/paper-full.min.js"></script>
     </head>
     <body>
+        <div class="logo-centerer">
+            <canvas id="logo"></canvas>
+        </div>
         <section class="section">
-            <span class="is-pulled-left">
-                <a class="nav-link" href="https://github.com/eyashi" target="_blank"><i class="fab fa-github is-size-3"></i></a>
-                <a class="nav-link" href="https://www.linkedin.com/in/eyashin/" target="_blank"><i class="fab fa-linkedin is-size-3"></i></a>
-            </span>
-            <span class="nav is-pulled-right">
-                <a class="nav-link" href="">about</a>
-                <a class="nav-link" href="#projects">projects</a>
-                <a class="nav-link" href="">resume</a>
-                <a class="nav-link" id="party-button">party</a>
-            </span>
-            <div class="level">
-                <div class="level-item">
-                    <canvas id="logo"></canvas>
-                </div>
-            </div>
-        </section>
-        <section>
             <div class="container">
-                <p class="is-size-1">
-                    hello, i am ed yashin
-                </p>
-                <p class="is-size-4">
-                    i am on a mission to learn a little about everything, and a lot about some things.
-                </p>
-                <p>
-                    i am employed as an automation engineer at <a href="https://www.calicolabs.com/" target="_blank">Calico</a> <br>
-                    in my freetime, i tinker with iot, 3d printers, and anything else i can get my hands on <br>
-                </p>
+                <div class="level">
+                    <div class="level-left level-item is-reactive ml-5">
+                        <a class="nav-link" href="https://github.com/eyashi" target="_blank"><i class="fab fa-github is-size-3"></i></a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/eyashin/" target="_blank"><i class="fab fa-linkedin is-size-3"></i></a>
+                    </div>
+                    <div class="level-item is-block mx-5">
+                        <p class="is-size-2">
+                            hello, i am ed yashin
+                        </p>
+                        <p class="is-size-4">
+                            i am on a mission to learn a little about everything, and a lot about some things.
+                        </p>
+                        <p>
+                            i am employed as an automation engineer at <a class="inline-link" href="https://www.calicolabs.com/" target="_blank">Calico</a> <br>
+                            in my freetime, i tinker with iot, 3d printers, and anything else i can get my hands on <br>
+                        </p>
+                    </div>
+                    <div class="level-item level-right is-reactive ml-5">
+                        <a class="nav-link" href="">about</a>
+                        <a class="nav-link" href="#projects">projects</a>
+                        <a class="nav-link" id="party-button">party</a>
+
+                    </div>
+                </div>
             </div>
         </section>
 
