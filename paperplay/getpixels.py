@@ -23,7 +23,7 @@ x_init, y_init = x_scan, y_scan
 pixel_bounds.append([[x_init, y_init], [x_init+4, y_init+4]])
 
 while y_scan < height:
-    x_scan +=4
+    x_scan += 4
     if x_scan >= width:
         x_scan = 0
         y_scan += 4
