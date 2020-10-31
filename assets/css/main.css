@@ -2,28 +2,20 @@
 {
     padding: .2em;
     display: table;
-}
-a.inline-link
-{
-    color: #2a9f4a;
-}
-a.inline-link:hover
-{
-    color: blueviolet;
-}
-a.nav-link
-{
     text-decoration: none;
     color: gray;
 }
-a.nav-link:hover
+.inline-link
+{
+    color: #2a9f4a;
+}
+.inline-link:hover
 {
     color: blueviolet;
 }
-a.nav-link:active
+.nav-link:hover
 {
-    color: gray;
-    text-indent: .1em;
+    color: blueviolet;
 }
 
 .party-overlay {
@@ -45,17 +37,6 @@ a.nav-link:active
 
 .is-reactive {
     display: block;
-}
-
-@media(max-width: 766px){
-    .is-reactive {
-        display: inline-flex;
-        text-align: center;
-    }
-    a.nav-link
-    {
-        color: blueviolet;
-    }
 }
 
 .logo-centerer {
