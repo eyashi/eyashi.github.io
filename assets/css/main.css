@@ -1,3 +1,11 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  body {
+    position: relative;
+  }
+
 .nav-link
 {
     padding: .2em;
