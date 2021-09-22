@@ -43,35 +43,35 @@ function initalizeLogo(){
     var original_length = paper.project.activeLayer.children[0].length;
 
 
-    window.onresize = (event) => {
+    // window.onresize = (event) => {
 
-        var w = window.innerWidth;
-        if (w < original_w){
-            var r = w / original_w;
+    //     var w = window.innerWidth;
+    //     if (w < original_w){
+    //         var r = w / original_w;
 
-            for(var i=0; i<paper.project.activeLayer.children.length; i++){
-                var cur_item = paper.project.activeLayer.children[i];
-                var o_pos = orig_pos_array[i]
-                if(cur_item.length <= original_length){
-                    if(last_r != 0) {cur_item.setScaling(1/last_r)}
-                    cur_item.setScaling(r);
-                    let new_x = r * o_pos.x;
-                    let new_y = r * ratio * o_pos.y;
-                    cur_item.setPosition(new_x, new_y)
-                }
-            }
-            last_r = r;
-        }
-        else{
-            if (paper.project.activeLayer.children[0].length != original_length){
-                for(var i=0; i<paper.project.activeLayer.children.length; i++){
-                    var cur_item = paper.project.activeLayer.children[i];
-                    cur_item.setScaling(original_length/paper.project.activeLayer.children[0].length);
-                    cur_item.setPosition(orig_pos_array[i].x, orig_pos_array[i].y);
-                }
-            }
-        }
-    }
+    //         for(var i=0; i<paper.project.activeLayer.children.length; i++){
+    //             var cur_item = paper.project.activeLayer.children[i];
+    //             var o_pos = orig_pos_array[i]
+    //             if(cur_item.length <= original_length){
+    //                 if(last_r != 0) {cur_item.setScaling(1/last_r)}
+    //                 cur_item.setScaling(r);
+    //                 let new_x = r * o_pos.x;
+    //                 let new_y = r * ratio * o_pos.y;
+    //                 cur_item.setPosition(new_x, new_y)
+    //             }
+    //         }
+    //         last_r = r;
+    //     }
+    //     else{
+    //         if (paper.project.activeLayer.children[0].length != original_length){
+    //             for(var i=0; i<paper.project.activeLayer.children.length; i++){
+    //                 var cur_item = paper.project.activeLayer.children[i];
+    //                 cur_item.setScaling(original_length/paper.project.activeLayer.children[0].length);
+    //                 cur_item.setPosition(orig_pos_array[i].x, orig_pos_array[i].y);
+    //             }
+    //         }
+    //     }
+    // }
 
     paper.view.draw();
 }
