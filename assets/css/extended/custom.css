@@ -19,3 +19,7 @@
 [data-theme='dark'] .list {
     background: var(--theme);
 }
+
+.first-entry {
+    margin-top: 0;
+}

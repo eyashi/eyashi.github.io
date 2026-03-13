@@ -1,6 +1,6 @@
 baseURL = 'https://eyashi.github.io/'
 languageCode = 'en-us'
-title = "Ed Yashin"
+title = "Ed's Really Cool Personal Site and Blog"
 theme = 'PaperMod'
 [pagination]
   pagerSize = 10
@@ -20,7 +20,7 @@ enableRobotsTXT = true
 
 [params]
   env = 'production'
-  description = "A little about everything, and a lot about some things."
+  description = "Thoughts, research, exploration... yap."
   author = 'Ed Yashin'
   defaultTheme = 'auto'
   ShowReadingTime = true
@@ -33,12 +33,15 @@ enableRobotsTXT = true
   math = true
 
   [params.homeInfoParams]
-    Title = "hello, i am ed yashin"
+    Title = "Welcome to my page!"
     Content = """
-i am on a mission to learn a little about everything, and a lot about some things.
+I am on a mission to learn a little about everything and a lot about some things.
 
-i am employed as an automation engineer at [ArsenalBio](https://www.arsenalbio.com/).
-in my freetime, i tinker with iot, 3d printers, and anything else i can get my hands on.
+I've worked as an automation engineer in labs all across the San Francisco bay.
+
+These days, I write custom software for integrating lab instrumentation, spend a lot of time at the pottery studio, and dabble in some home laser fluorescent microscopy.
+
+Finally, I share my voice with the world.
 """
 
   [[params.socialIcons]]
