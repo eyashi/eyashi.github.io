@@ -78,11 +78,6 @@ in my freetime, i tinker with iot, 3d printers, and anything else i can get my h
   url = '/search/'
   weight = 30
 
-[[menu.main]]
-  identifier = 'about'
-  name = 'About'
-  url = '/about/'
-  weight = 40
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
