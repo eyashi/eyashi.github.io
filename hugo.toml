@@ -1,0 +1,86 @@
+baseURL = 'https://eyashi.github.io/'
+languageCode = 'en-us'
+title = "Ed's Really Cool Personal Site and Blog"
+theme = 'PaperMod'
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = true
+    style = 'monokai'
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  env = 'production'
+  description = "Thoughts, research, exploration... yap."
+  author = 'Ed Yashin'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  math = true
+
+  [params.homeInfoParams]
+    Title = "Welcome to my page!"
+    Content = """
+I am on a mission to learn a little about everything and a lot about some things.
+
+I've worked as an automation engineer in labs all across the San Francisco bay.
+
+These days, I write custom software for integrating lab instrumentation, spend a lot of time at the pottery studio, and dabble in some home laser fluorescent microscopy.
+
+Finally, I share my voice with the world.
+"""
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/eyashi'
+  [[params.socialIcons]]
+    name = 'linkedin'
+    url = 'https://www.linkedin.com/in/eyashin/'
+
+  [params.cover]
+    linkFullImages = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ['title', 'permalink', 'summary', 'content']
+
+[[menu.main]]
+  identifier = 'home'
+  name = 'Home'
+  url = '/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'blog'
+  name = 'Blog'
+  url = '/posts/'
+  weight = 20
+
+[[menu.main]]
+  identifier = 'search'
+  name = 'Search'
+  url = '/search/'
+  weight = 30
+
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']

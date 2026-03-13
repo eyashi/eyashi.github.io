@@ -1,0 +1,19 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <div style="width: 100%; text-align: center; margin-bottom: 1rem;">
+        <canvas id="logo" style="display: inline; max-width: 100%; height: auto;"></canvas>
+    </div>
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.11/paper-full.min.js"></script>
+<script src="/js/points.js"></script>
+<script src="/js/logo.js"></script>
+{{- end -}}
