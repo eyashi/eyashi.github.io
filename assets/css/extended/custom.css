@@ -1,0 +1,21 @@
+:root {
+    --theme: #fffcf2;
+    --entry: #fffdf6;
+    --code-bg: #f5f0e3;
+    --border: #ece7da;
+}
+
+.list {
+    background: var(--theme);
+}
+
+[data-theme='dark'] {
+    --theme: #1d1e20;
+    --entry: #2e2e33;
+    --code-bg: #37383e;
+    --border: #333;
+}
+
+[data-theme='dark'] .list {
+    background: var(--theme);
+}

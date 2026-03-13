@@ -6,9 +6,10 @@ function getRandomRainbow(){
 const original_w = 516;
 const original_h = 546;
 
-
-window.onload = function() {
-    initalizeLogo()
+if (document.readyState === 'complete') {
+    initalizeLogo();
+} else {
+    window.addEventListener('load', initalizeLogo);
 }
 
 function initalizeLogo(){
